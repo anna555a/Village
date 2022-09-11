@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Участки ИЖС Московская область д.Щекавцево</title>
-    <link rel="stylesheet" href="vilagge.css">
+    <link rel="stylesheet" href="styles/village.css">
     <meta name="description" content="Продажа участков в д. Щекавцево от собственника. Продажа участков на Горьковском шоссе">
     <meta name="keywords" content="Щекавцево, Участки, Земельные участки, Участки на Горьковском шоссе, Участки в Подмосковье, участки ИЖС, Ногинск">
     <meta property="og:title" content="Участки в деревне Щекавцево от собственника">
@@ -17,30 +17,40 @@
 </head>
 <body>
     <header>
-        <ul class="menu_list">
-            <li>
-             <p class="address"> Московская область, Богородский городской округ, деревня Щекавцево</p> 
-            </li>
-            <li class="contacts-phone">					
-                <img src="phone-call.svg" width="20" height="15" alt=""><a id="contacts-phoneLink" class="ul-contacts-phoneLink" href="tel:8(916)681-85-69">
-            <span itemprop="telephone"><span>8(916)681-85-69</span></span></a>
-            </li>
-            <li class="contacts-mail">
-             <img  src="mail.svg" width="20" height="20" alt=""><a href="mailto:9166818569@mail.ru"><span itemprop="email">9166818569@mail.ru</span></a>
-            </li>
-            <li class="whatsapp">
-                <a href="https://wa.me/79166818569"><img class="whatsapp" src="wap.png" width="130" height="50" alt=""></a>
-            </li>
-        </ul>
+        <div class="header_bar">
+            <div>
+                <p class="address"> Московская область, Богородский городской округ, деревня Щекавцево</p> 
+            </div>
+            <div>
+                <ul class="menu_list">
+                    <li class="contacts-phone">					
+                        <img src="images/phone-call.svg" width="20" height="15" alt=""><a id="contacts-phoneLink" class="ul-contacts-phoneLink" href="tel:8(916)681-85-69">
+                    <span itemprop="telephone"><span>8(916)681-85-69</span></span></a>
+                    </li>
+                    <li class="contacts-mail">
+                        <img  src="images/mail.svg" width="20" height="20" alt=""><a href="mailto:9166818569@mail.ru"><span itemprop="email">9166818569@mail.ru</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="https://wa.me/79166818569"><img class="whatsapp" src="images/wap.png" width="120" height="50" alt=""></a>
+            </div>
+        </div>
     </header>
     <section>
+        <h1>Основная часть</h1>
+        <h2>Первая часть</h2>
+        <div>
+            <p><img src="https://97.img.avito.st/image/1/1.IJ96ebayjHZMzg57NglciKrajHDa2I4.rVxrE_Lm6nIhkma64NKJCGuT_QWNRX-JCUFiS-X95Qk" width="900" height="500" alt=""></p>
+        </div>
+        <h2>Вторая часть</h2>
         <div>
             <p><img src="https://97.img.avito.st/image/1/1.IJ96ebayjHZMzg57NglciKrajHDa2I4.rVxrE_Lm6nIhkma64NKJCGuT_QWNRX-JCUFiS-X95Qk" width="900" height="500" alt=""></p>
         </div>
     </section>
     <footer>
-        <form class="obratnuj-zvonok" autocomplete="off" action='email.php' method='post'>
-            <div class="form-zvonok"> 
+        <div class="form-zvonok"> 
+            <form class="obratnuj-zvonok" autocomplete="off" action='email.php' method='post'>
               <div>
                 <label>Имя <span>*</span></label>
                 <input type='text' name='username' required></div>
@@ -52,14 +62,15 @@
                 <input type='text' name='question'>
               </div>
               <input class="bot-send-mail" type='submit' value='Послать заявку'>
-            </div>
+            
             </form>
-            <div class="map" style="position:relative;overflow:hidden;">
-                <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/?ll=38.524105%2C55.993238&utm_medium=mapframe&utm_source=maps&z=16.84" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва и Московская область — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVqPEkxC" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-            </div>
-            <div class="arrow"> 
+        </div>
+        <div class="map" style="position:relative;overflow:hidden;">
+            <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/?ll=38.524105%2C55.993238&utm_medium=mapframe&utm_source=maps&z=16.84" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва и Московская область — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVqPEkxC" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+            <!---<div class="arrow"> 
                 <a href="#" title="Вернуться к началу страницы" class="topNubex">&#8593;</a>
-            </div>
+            </div>-->
     </footer>
 </body>
 </html>
