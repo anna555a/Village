@@ -16,7 +16,6 @@ header {
 
     /* Адрес */
 .header_bar div{
-    cursor: pointer;
     text-align: center;
 }
 
@@ -59,13 +58,6 @@ section h1{
 section h2{
     font-size: 35px;
 }
-
-
-/*
-a:link {
-
-}
-
 a:visited {
     text-decoration:rgb(29, 27, 27) ;
 }
@@ -77,43 +69,39 @@ a:hover {
 a:active {
     text-decoration:rgb(29, 27, 27) ;
 }
-*/
 @media screen and (min-device-width: 480px) { 
-    
+    .call-and-location{
+        flex-direction: column;
+    }
 }
-
-footer {
+.arrow {
+  
+}
+.call-and-location {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    background-color: #8ca3d42d;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5px 20% 20%;
 }
-/* Footer */
-
-.map {
-    margin: -900px 400px;
-}
-
-.arrow {
-    height:200px;
-    margin-left: 600px;
+.map
+{
+    background-color: #fff;
+    margin: 0px 30% 0px;
 }
 
-.obratnuj-zvonok{
-	width: 100%;
-	max-width: 350px;
-    margin: 600px 20px 500px;
+.callback{
+	width: max-content;
+	
 }
 
-.form-zvonok{
-	width: 100%;
+.call-form{
+	background-color: #fff;
 	display: flex;
-	flex-direction: column;
-	padding: 0 20px;
 	box-sizing: border-box;
 }
 
-.form-zvonok div{
+.call-form div{
 	padding: 15px 0;
 }
 
@@ -122,27 +110,27 @@ footer {
 	width: 100%;
 }
 
-.form-zvonok label,.form-zvonok input{
+.call-form label,.form-zvonok input{
 	display: block;
 	width: 100%;
 	box-sizing: border-box;
 }
 
-.form-zvonok label{
+.call-form label{
 	margin-bottom: 5px;
 	font-weight: bold;
 }
 
-.form-zvonok input{
+.call-form input{
 	padding: 10px 15px;
 	margin-top: 10px;
 }
 
-.form-zvonok label span{
+.call-form label span{
 	color: red;
 }
 
-.form-zvonok .bot-send-mail{
+.call-form .bot-send-mail{
 	padding: 15px;
 	margin-top: 10px;
 	background: none;
@@ -156,7 +144,20 @@ footer {
 	border-radius: 5px;
 }
 
-.form-zvonok .bot-send-mail:hover{
+.call-form .bot-send-mail:hover{
 	color: #00319b;
 	background-color: #fff;
+}
+/* Footer */
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #8ca3d42d;
+    text-align: center;
+}
+.bottom-list li{
+    display: inline;
+    list-style-type: none;
+    margin:  40px; /*расстояние между пунктами по ширине*/ 
 }
